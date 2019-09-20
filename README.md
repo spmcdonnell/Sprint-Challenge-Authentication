@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 -   [ ] What is the purpose of using _sessions_?
 
+Http request are stateless, leading to a situation wherein a user would have to log in every time they tried to access a restricted page. Sessions can be used to persist information across pages/routes such that they can be authenticated automatically as the person browses without having to do anything.
+
 -   [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+It hashes passwords so that they can be stored on the server in a way that would not reveal them even if they became compromised.
 
 -   [ ] What does bcrypt do to slow down attackers?
 
+It uses an algorithm that hashes the information multiple times. Someone attempting to take over the account would need the hash, the algorithm used, and knowledge of how many rounds were used to generate the hash.
+
 -   [ ] What are the three parts of the JSON Web Token?
+
+Header, payload, signature.
 
 ## Minimum Viable Product
 

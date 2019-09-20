@@ -39,7 +39,7 @@ server.use('/api/auth', authRouter);
 server.use('/api/jokes', authenticate, jokesRouter);
 
 server.get('/', (req, res) => {
-    res.send('API running');
+    res.status(200).send('API running');
 });
 
 module.exports = server;
